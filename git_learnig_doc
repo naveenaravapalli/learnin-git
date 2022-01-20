@@ -1,0 +1,88 @@
+//         working dir---(git add)--->staging area----(git commit)---->commit history-----(git push)----->finally store into server
+
+
+
+/* git setup */
+
+git config --global user.name "naveen"
+git config --global user.email "naveenaravapalli09@gmail.com"
+git config --global colour.ui auto
+git config -l //to know info--
+
+
+/* git init */  --only for new projects we use this step
+
+//create directory.
+//open the directory using terminal.
+//now we need to Initialized Git repository.
+
+git init . //it will create .git floder (hidden one)
+
+
+/* git add */
+
+//create some files
+
+git status //to see satus
+git add <filename> //to add the files
+git rm --cached <file name> //to remove file
+git add . //it add all files in current dir.
+git add -A // it will add all files if you are in another dir in same dir
+
+
+/* git commits */
+
+git commit -m "any mesage type here"
+
+//to see changes
+git log 
+//copy commit hash(random numbers)
+git show <past hash here> //will see the changes
+git diff //give the diffrences current one and commited one
+//if any changes done will see the changes and will follow the git add and git commit steps
+git restore <file name>// to discard the changes
+
+git commit --amend -m "messagfe type here" //(--amend)it will replace previous message
+
+
+/* push an existing repository from the command line */
+
+git remote add origin git@github.com:naveenaravapalli/learnin-git.git //to connect my git repo
+git branch -M main //for changing branch master to main
+git push -u origin main 
+//here we get error we first setup ssh our github account
+
+/* generate ssh key */
+
+//goto git hub profile select SSH and GPG keys and follow the instructions to generate SSH keys link. there you follow commands based on your machine(windows/linux/mac).
+//here i am giving link for ssh key generation 
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+//after ssh key generation successfully then try to push the code.
+git push -u origin main //for next time you can use only git push
+
+//now you can see local files in oyur github account
+
+
+/* git pull */
+
+// you will get files and changes from git to your local machine 
+git pull
+
+
+/* Branches */
+
+//here we have so many commits for each commit it will generate hash(random nunbers (will see using git log command)) all these commits are inside what we called branch.
+//while pushing files into git will see the main branch and in internet master branch we changed master to main branch(git branch -M main) both same same. these are default branches.
+// A branch represents an independent line of development.
+// best pratice was create seperate branch then do copule commits and merge to main branch.
+
+
+/* working with branches */
+
+git branch //to know working branch
+git branch -r //for remote branches
+git branch -a //all branches
+git branch <new branch name> //to create new branch
+
