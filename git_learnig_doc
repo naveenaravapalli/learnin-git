@@ -85,4 +85,9 @@ git branch //to know working branch
 git branch -r //for remote branches
 git branch -a //all branches
 git branch <new branch name> //to create new branch
+git checkout <branch name> //to swithch the branch
+git checkout -b <branch name> // at a time create branch and switching to newly created branch
+git branch -d <branch name> // to delete the branch(you should not at delete branch to detele)
+//newly created branch files will not reflect to main
+
 
