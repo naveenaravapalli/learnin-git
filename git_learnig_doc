@@ -68,7 +68,7 @@ git push -u origin main //for next time you can use only git push
 /* git pull */
 
 // you will get files and changes from git to your local machine 
-git pull
+git pull //
 
 
 /* Branches */
