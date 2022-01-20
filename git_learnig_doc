@@ -89,5 +89,16 @@ git checkout <branch name> //to swithch the branch
 git checkout -b <branch name> // at a time create branch and switching to newly created branch
 git branch -d <branch name> // to delete the branch(you should not at delete branch to detele)
 //newly created branch files will not reflect to main
-
-
+// for that we need to merge the branches 
+git merge <branch  name> //we should at main branch then merge the branch to main after we can delete
+git branch -d <branch name> //to delete afetr merge
+// Better do pull request in git hub
+// for that select pull request option on git hub then select pull request then pic the branch give the discription for changes and pull request.
+//we have reviewers to pic them to reviwe the changes. Like some setting are there you can set according to work.
+// afetr review click merge pull request. we can configure through settings.
+//after delete the branch. 
+// now goto main branch you will see the merged branch files.
+// goto local machine you can see the changes 
+//first we full 
+git pull
+git log --oneline //to see the changes better way
