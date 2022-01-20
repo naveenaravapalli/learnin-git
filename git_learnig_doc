@@ -10,7 +10,7 @@ git config --global colour.ui auto
 git config -l //to know info--
 
 
-/* git init */  --only for new projects we use this step
+/* git init */  /* --only for new projects we use this step */
 
 //create directory.
 //open the directory using terminal.
