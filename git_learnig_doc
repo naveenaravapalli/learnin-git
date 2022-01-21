@@ -170,3 +170,12 @@ git tag -a <tag name> -m "discription reated to tag"
  git diff <tag name1> <tag name2>
  
  git tag -d <tag name> // to delete the tag
+ 
+ // we can give tags to old commits also.
+ git tag -a <tag name> <commitid> -m "discription anything"
+ // you can change tag place also by deleteing and assign new tag place.
+ //you can directly update tag forefully by usig below cmd.
+ git tag -a <tag name> -f <commit id> -m "discription anything"
+ //we can push the particular tag also 
+ git push origin <branch> <tag name>
+ git push origin <branch> --tags // it will push all tags to remote location
