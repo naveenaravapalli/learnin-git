@@ -39,6 +39,7 @@ git log
 //copy commit hash(random numbers)
 git show <past hash here> //will see the changes
 git diff //give the diffrences current one and commited one
+git diff --staged // to give diff of staged files
 //if any changes done will see the changes and will follow the git add and git commit steps
 git restore <file name>// to discard the changes
 
