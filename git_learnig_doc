@@ -134,3 +134,18 @@ git rebase --contiue
 git push -f 
 // now you can see the main branch chanegs to your branch then you can merge by the pull rdequest. after you can delete branch.
 
+
+/* git stashing */
+// it just delete the updated data means move that data to recycle bin
+
+git stash or git stash <file name>
+git stash list //it will all stashes and it will assign numbering also like stash@{1}
+git stash apply //it apply latest stash that means it will work like stack(fifo)
+git stash drop //it will delete stash data from bin
+git stash apply <stash value (example -- stash@{1})> //it will give particual stash and apply
+git stash pop// it will apply and drop the stash
+git stash -u // it will stash the untracked(before add all files are untracked) files also
+
+/* creating branch from stashing */
+// that means it will create branch where we stash was done
+git stash branch <branch name>//it will all stash apply to here
