@@ -110,3 +110,4 @@ git log --oneline //to see the changes better way
 // if in case conflicts are rasied you first slove then then push.
 
 git pull --rebase origin main // or git pull -r origin main
+//
