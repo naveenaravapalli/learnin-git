@@ -110,5 +110,11 @@ git log --oneline //to see the changes better way
 // if in case conflicts are rasied you first slove then then push.
 // you can do manually or using using terminal.
 
+<<<<<<< HEAD
 git pull --rebase origin main // or git pull -r origin main
 //
+=======
+
+/* git rebase */
+// if you working on one branch and you master done changes so we need to take that changes and add our changes on top of it this is what rebase allow to do.
+>>>>>>> rebase stage added
