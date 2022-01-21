@@ -179,3 +179,4 @@ git tag -a <tag name> -m "discription reated to tag"
  //we can push the particular tag also 
  git push origin <branch> <tag name>
  git push origin <branch> --tags // it will push all tags to remote location
+ git push -d origin <tag name> // to delete tags on remote location
