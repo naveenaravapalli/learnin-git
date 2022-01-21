@@ -115,5 +115,12 @@ git log --oneline //to see the changes better way
 /* git rebase */
 // if you working on one branch and you master done changes so we need to take that changes and add our changes on top of it this is what rebase allow to do.
 
-git pull --rebase origin main // or git pull -r origin main
+git pull --rebase origin main // or use this command git pull -r origin main
+
+//you will see conflicts you should reslove. at a time you can slove one conflict so follow below commands and slove all conflicts.
+git add .
+git rebase --contiue
+// after sloving the conflicts you should push by forcefully
+git push -f 
+// now you can see the main branch chanegs to your branch then you can merge by the pull rdequest. after you can delete branch.
 
