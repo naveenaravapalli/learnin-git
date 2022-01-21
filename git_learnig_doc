@@ -43,6 +43,8 @@ git commit -v //verbose it will give every change
 
 git commit -m "any mesage type here" //single line message
 
+git commit -am "any message"//it will do adding and commit at atime
+
 //to see changes
 git log 
 //copy commit hash(random numbers)
@@ -149,3 +151,22 @@ git stash -u // it will stash the untracked(before add all files are untracked) 
 /* creating branch from stashing */
 // that means it will create branch where we stash was done
 git stash branch <branch name>//it will all stash apply to here
+
+/* git clean */
+// be careful we can nor recover deleted files
+git clean -f// only untracked files wsa deleted
+git clean -f -d // to delete dir also
+git clean -f -d -x// it will delete .gitignore files also
+git clean -f -n// it will give to be deleted files
+
+/* taging */
+//to mark the particular commit 
+git tag -l // to list all tags
+git tag <tag name > // to create tag for latest commit.
+// it was lite weight tag it does not any discription.
+// we can give discription also using annoyted tag.
+git tag -a <tag name> -m "discription reated to tag"
+ //if you want to see the changes of diffrerent tags you can follow below cmd
+ git diff <tag name1> <tag name2>
+ 
+ git tag -d <tag name> // to delete the tag
