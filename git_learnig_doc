@@ -108,6 +108,7 @@ git log --oneline //to see the changes better way
 
 //if you avoid conflicts every time you first pull then do the changes then push.
 // if in case conflicts are rasied you first slove then then push.
+// you can do manually or using using terminal.
 
 git pull --rebase origin main // or git pull -r origin main
 //
