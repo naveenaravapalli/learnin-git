@@ -102,3 +102,8 @@ git branch -d <branch name> //to delete afetr merge
 //first we full 
 git pull
 git log --oneline //to see the changes better way
+
+
+/* Dealing with conflicts */
+
+//if you avoid conflicts every time you first pull then do the changes then push.
