@@ -30,9 +30,18 @@ git add . //it add all files in current dir.
 git add -A // it will add all files if you are in another dir in same dir
 
 
+/* git alias */
+// we can create cmds shortcut for own
+
+got config --global alias.<own cmd> "original cmd"//example -- git config --global alias.allcommits "log --oneline --graph --all"
+
 /* git commits */
 
-git commit -m "any mesage type here"
+git commit //for direct commit
+
+git commit -v //verbose it will give every change
+
+git commit -m "any mesage type here" //single line message
 
 //to see changes
 git log 
