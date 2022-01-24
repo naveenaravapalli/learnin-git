@@ -1,6 +1,18 @@
 
 /****************************************************GIT and GIT HUB *******************************************************/
 
+/* GIT */
+
+//Git is a version control tool (software) to track the changes in the source code.
+
+
+/* GIT HUB */
+
+//GitHub is a web-based cloud service to host your source code(Git repositories). It is a centralized system.
+
+//Git doesn’t require GitHub but GitHub requires Git.
+
+
 
 
 //         working dir---(git add)--->staging area----(git commit)---->commit history-----(git push)----->finally store into server
